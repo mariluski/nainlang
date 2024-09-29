@@ -1,0 +1,57 @@
+# Set line endings to LF
+set newline lf
+
+# Enable syntax highlighting
+syntax on
+
+# Set tab width to 4 spaces
+set tabstop=4      # Display tabs as 4 spaces
+set shiftwidth=4   # Indentation level is 4 spaces for operations like >>
+set noexpandtab    # Use actual tab characters instead of spaces
+
+
+# Show line numbers
+set number
+
+# Enable auto-indentation
+set autoindent
+set smartindent
+
+# Highlight current line
+set cursorline
+
+# Enable mouse support
+set mouse=a
+
+# Enable clipboard integration
+set clipboard=unnamedplus
+
+# Set search options
+set ignorecase
+set smartcase
+set hlsearch
+
+# Enable spell checking
+set spell
+set spelllang=en_us
+
+# Define color scheme (example)
+colorscheme desert
+
+# Set file encoding to UTF-8
+set encoding=utf-8
+
+# Automatically read files changed outside of the editor
+set autoread
+
+# Set a custom backup directory
+set backupdir=~/.vim/backups//
+
+# Display the status line
+set laststatus=2
+
+# Set a custom status line format
+set statusline=%f%m%r%h%w[%{&ff}]%y[%{&fileformat}]%{&fileencoding} %=%-14.(%l,%c%V%)\ %P
+
+# Enable undo file persistence
+set undofile
