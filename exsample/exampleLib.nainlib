@@ -1,6 +1,6 @@
 // Note the file extension is .nainlib please don't change it! else it won't work!
 // This is a library example, you can make libraries in nain!
-// NOTE: a header file is kind of a library, but it is not a library! its important to know this! as headers can be used in libraries! (unless you use the silclibh header )
+// NOTE: a header file is kind of a library, but it is not a library! its important to know this! as headers can be used in libraries! (unless you use the silclibh header) and libraries can be used in headers and programs!
 
 
 
