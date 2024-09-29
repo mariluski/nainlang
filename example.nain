@@ -1,0 +1,128 @@
+with "stdstream" mode: integrated // The stdstream library is a standard library for the Nain programming language, it is used for printing and inputting data, you can make your code shorter by setting the mode to integrated so you don't have to type stdstream again and again!
+
+// The first Nain programing lenguage programing. 
+
+// This is a comment
+
+/
+    This is a
+    multiline comment
+\
+
+let x = 17
+let y = 5
+let z = x + y // 22
+
+print("Hello, World!, z is"...z)
+
+// Some more examples
+
+del x, y, z // now x, y and z are deleted!
+if z > 10 {
+    print("z is greater than 10")
+}
+let foo = "Nain is cool!"
+let bar = "9"
+let baz = 5
+
+if [bar == bar] { // Nain can compare values of different types by comparing them
+}
+
+with "aidas" aka: aid // Aidas is the default framework for Nain
+
+let win: aid::Window = aid.window(title="Hi there!!") // With nain you can specify types!
+let text = aid.text(text="Hello, Aidas!", parent=win) // You can use "" or '' for strings!
+win.show() // Nain has a very minimal syntax for everything, Even GUI stuff!
+
+fn getImage() { // Functions are also supported!
+    let link = linkInput("Enter a link to an image: ") // Nain uses camelCase for variables and functions, PascalCase for objects and SCREAMING_SNAKE_CASE for constants
+    return link
+    Everything after the return is not executed, meaning you can make comments withous the //
+}
+
+let img = getImage(parent=win) // You can use the return value of a function as a variable
+win.refresh() // You can use the refresh function to update the window
+
+const: aid::Markdown = """# Hello World!
+Aidas supports Markdown for making everything faster!
+Also Multi-line Strings are supported!
+
+$FACT `
+Fun-Fact: Aidas is written in Nain and python!
+And you can use $FACT, $WARNING $REMEMBER and$ERROR in your markdown to mark it!
+`
+$REMEMBER `
+Use the backtick for special blocks!
+`
+%HTML ´
+    <p>You can use HTML in your markdown!</p>
+´
+
+
+"""
+
+let myMarkdown = aid.md(markdown=markdownCode, parent=win) // You can use markdown code in your program
+
+try {
+    let test = NainIsCool + 13 // Nain has a try catch block, so you can handle
+} catch err {
+    printError("There was an error"...err) // You can print errors!
+    print("The error was caught")
+} finally time=block.startedTime { // Nain supports arguments for blocks and control flow!
+    printAssist(format'Finished execution in [$time] seconds') // You can format strings! And use printAssist to print helpfull messages!
+}
+
+with fileInteracts aka: file // Nain makes it easy to organize your projects with the fileInteracts library wich also works with C, lua and python!
+
+let myDict = [{ // Very simple syntax for dictionaries
+    [[Basic Data]]
+    name: "Javier",
+    age: 25,
+    height: 1.8,
+    [[More]]
+    friends: ["Sergio", "Jon", "Maria"],
+    hobbies: ["Coding", "Reading", "Watching Movies"],
+}] // Nain has a very simple syntax for dictionaries, you can use the [{}] brackets to create a dictionary, and the [[]] To structure it!
+
+file.create("myFiledArray.nanarr", data=myDict) // Nain has a file format for dictionarys that can be converted to dectionarys and vice versa!
+del myDict // Deleating for demonstration purposes
+myDict = file.read("myFiledArray.nanarr", dataType="dictionary") // Reading a file as a 
+print(myDict) // Nain automatically formats dictionaries so you can show them in a nice way!
+print(myDict.Basic Data) // Or entire sections of a dictionary! It also works with spaces!
+print(myDict.Basic Data.name) // You can also access the values of a dictionary!
+
+// You can also use OOP in Nain with perfect support!
+class Person {
+    name = ""
+    age = 0
+    height = 0
+    friends = []
+    hobbies = []
+} // Making a class is very straightforward!
+
+let Javier = Person(myDict) // You can create an object from a dictionary!
+
+/ More info about Nain
+
+Data types:
+    - Numbers: As always, Nain also supports numbers! an detects the size!
+    - Strings: Nain supports strings, you can use "" or '' for strings!
+    - Lists: Nain supports lists, you can use [] for lists!
+    - Dictionaries: Nain supports dictionaries, you can use [{}] for dictionaries!
+    - Booleans: Nain supports booleans, you can use true and false!
+    - Functions: Nain supports functions, you can do everything you would expect!
+    - Classes: Nain supports classes, you can use the class keyword!
+    - Modules: Nain supports modules, you can use a lot of them thanks to lim, the package manager!
+    - Files: Nain supports files, NOTE: you need to use the fileInteracts library.
+
+    Different data types, these are not supported with everything but can be used:
+    
+        - Infinity: When a number is bigger than a 128 bit integer, it is considered infinity, and when a number is smaller than a 128 bit integer, it is considered negative infinity.
+        - NaN: NaN stands for Not a Number, it is a special value that represents an operation didn't go well, its also treated as 0 or false in some classes
+        - Nil: This is the value that variables are set to when they are not initialized, it is also used for functions that don't return anything
+        - NFCOO: This mean Not Found Class Or Object, this is used when you referenced a deleated object or class, also if the garbage collector removed it.
+        - Any: this value is used when you use functions that don't support special values but you operate woth them, can also be used to change the data type of a variable, as the next value it gets is the new data type.
+
+        I hope you enjoy using Nain as much as I enjoyed making it and you learnt something new! :D
+        
+\
