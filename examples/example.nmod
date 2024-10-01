@@ -1,0 +1,13 @@
+// This is a comment
+
+[[Seccion 1]]
+valor1 = 15
+valor2 = 5
+valor3 = valor1 + valor2 // hay operadores en un NMod
+[[Seccion 2]]
+valor4 = valor1 + valor2
+[[Seccion 3]]
+texto = "Hola, mundo!"
+[[Seccion 4]]
+texto2 = ":D"
+textoUnicode = "" // NMod funciona con caracteres unicode

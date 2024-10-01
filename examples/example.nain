@@ -18,14 +18,16 @@ print("Hello, World!, z is"...z)
 // Some more examples
 
 del x, y, z // now x, y and z are deleted!
-if z > 10 {
+let z = 15
+
+if [z > 10] {
     print("z is greater than 10")
 }
 let foo = "Nain is cool!"
 let bar = "9"
 let baz = 5
 
-if [bar == bar] { // Nain can compare values of different types by comparing them
+if [bar == baz] { // Nain can compare values of different types by comparing them
 }
 
 with "aidas" aka: aid // Aidas is the default framework for Nain

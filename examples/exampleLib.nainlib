@@ -3,7 +3,6 @@
 // NOTE: a header file is kind of a library, but it is not a library! its important to know this! as headers can be used in libraries! (unless you use the silclibh header) and libraries can be used in headers and programs!
 
 
-
 with libtools aka: ltools // To make libraries you need to use the libtools header!
 ltools.defnm("MyLib") // You can define a name for your library
 ltools.defver("1.0.0") // You can define a version for your library
@@ -11,7 +10,14 @@ ltools.defdesc("This is a description for my library") // You can define a descr
 ltools.format("nainDefaultLibFormat") // You can change the default format for libraries the default one is "nainDefaultLibFormat" and just means that you can integrate it.
 
 class Main {
-
+    fn main() {
+        // If a function on the main class is called main, it will run when impored
+        print("Hello, World!")
+        let x = 17
+        let y = 5
+        let z = x + y
+        print("z is"...z)
+    }
 } // You can make classes in libraries, in fact, you need to make a class in order to make a library!
 
 ltools.power(Main, "main") // This makes the class Main the main class of the library!

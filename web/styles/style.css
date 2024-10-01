@@ -1,0 +1,18 @@
+#header1 {
+    color: rgb(237, 237, 237);
+    font-size: 600%;
+    font-family: 'Cubano';
+    top: 1%;
+    font-weight: lighter;
+}
+#subh {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    font-weight: 500;
+    text-wrap: wrap;
+}
+body {
+    background: rgb(53, 53, 53);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
